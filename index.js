@@ -1,6 +1,7 @@
 'use strict';
 
 var Hapi = require('hapi');
+var Joi = require('joi');
 var fs = require('fs');
 var uuid = require('node-uuid');
 var spawn = require('child_process').spawn;
@@ -23,6 +24,14 @@ server.route(
 [{
   method: 'POST',
   path: '/compile',
+  config: {
+    validate: {
+      payload: {
+        source: Joi.string().required(),
+        board: Joi.string().required()
+      }
+    }
+  },
   handler: function (request, reply) {
 
     var returnObject = {};
