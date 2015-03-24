@@ -7,7 +7,8 @@
     "boom": "^2.6.1",
     "hapi": "^8.4.0",
     "joi": "^6.0.8",
-    "node-uuid": "^1.4.3"
+    "node-uuid": "^1.4.3",
+    "when": "^3.7.2"
   },
   "devDependencies": {},
   "scripts": {
