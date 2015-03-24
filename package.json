@@ -1,0 +1,19 @@
+{
+  "name": "arduino-server",
+  "version": "0.0.0",
+  "description": "arduino build server",
+  "main": "index.js",
+  "dependencies": {
+    "boom": "^2.6.1",
+    "hapi": "^8.4.0",
+    "joi": "^6.0.8",
+    "node-uuid": "^1.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Rosenthal",
+  "license": "MIT"
+}
